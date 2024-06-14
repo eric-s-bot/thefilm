@@ -5,11 +5,10 @@
     <base href="">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> the film</title>
-    <meta name="description" content="eventos, casamentos, 15 anos, festas, corporativo e outros." />
-    <link rel="icon" href="26387fa4f5b1e3f7b6217b27d79bf264.png" type="image/png" sizes="16x16">
-    <link rel="icon" href="2d0b56e7e51cf11036ad8734bdb67e2d.png" type="image/png" sizes="32x32">
-    <link rel="apple-touch-icon" href="725b756a69a7d4c235070e51acd85560.png" sizes="180x180">
+    <title>The Film</title>
+    <meta name="description" content="eventos, casamentos, 15 anos, festas, video corporativo e outros." />
+    <link rel="icon" href="images/the-film-w.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         :root {
             --ffsd: 0px;
@@ -5033,13 +5032,59 @@
     </noscript>
     <script>
         nonce='98e2ae0f-f4dd-4b7d-9010-6a3717968ed0'>!function () { "use strict"; function t(t, n) { let e; return (...o) => { clearTimeout(e), e = setTimeout((() => { t(...o) }), n) } } class n { constructor() { this.callbacks = [], window.addEventListener("DOMContentLoaded", (() => this.onDOMContentLoaded())) } onDOMContentLoaded() { this.callbacks.sort(((t, n) => t.priority - n.priority)).forEach((({ callback: t }) => t())) } runOnLoad(t) { "loading" === document.readyState ? this.callbacks.push(t) : t.callback() } } function e(t, e = Number.MAX_VALUE) { var o; (window.canva_scriptExecutor = null !== (o = window.canva_scriptExecutor) && void 0 !== o ? o : new n).runOnLoad({ callback: t, priority: e }) } class o { constructor(t) { this.items = [], this.previousWidth = document.documentElement.clientWidth, this.previousHeight = window.innerHeight; const n = t((() => this.onWindowResize()), 100); window.addEventListener("resize", n) } onWindowResize() { const t = document.documentElement.clientWidth, n = window.innerHeight, e = this.previousWidth !== t, o = this.previousHeight !== n; this.items.forEach((t => { const n = () => { t.callback(), t.executed = !0 }; (!t.executed || e && t.options.runOnWidthChange || o && t.options.runOnHeightChange) && n() })), this.previousWidth = t, this.previousHeight = n } runOnResize(t, n) { this.items.push({ callback: t, options: n, executed: n.runOnLoad }), this.items.sort(((t, n) => t.options.priority - n.options.priority)), n.runOnLoad && e(t, n.priority) } } function i(n, e, i = t) { var r; (window.canva_debounceResize = null !== (r = window.canva_debounceResize) && void 0 !== r ? r : new o(i)).runOnResize(n, { runOnLoad: !1, runOnWidthChange: !0, runOnHeightChange: !1, priority: Number.MAX_VALUE, ...e }) } const r = "--minfs", c = "--rzf", a = "--rfso", s = "--bfso"; function u(t, n, e = .001) { return Math.abs(t - n) < e } function d(t, n) { return window.getComputedStyle(t).getPropertyValue(n) } function l(t, n, e) { t.style.setProperty(n, e) } function m(t, n) { const e = document.createElement("div"); e.style.setProperty(t, n), document.body.append(e); const o = d(e, t); return e.remove(), o } function f() { const t = function () { const t = parseFloat(m("font-size", "0.1px")); return t > 1 ? t : 0 }(), n = function (t) { const n = 2 * Math.max(t, 1); return n / parseFloat(m("font-size", `${n}px`)) }(t); if (function (t) { if (0 === t) return; l(document.documentElement, r, `${t}px`), i((() => { const n = 100 * t, { clientWidth: e } = document.documentElement; l(document.documentElement, c, n > e ? (e / n).toPrecision(4) : null) }), { runOnLoad: !0 }) }(t * Math.max(1, n)), u(n, 1)) return; const e = u(parseFloat(d(document.documentElement, "font-size")), parseFloat(m("grid-template-columns", "1rem"))); l(document.documentElement, e ? a : s, n.toPrecision(4)) } function h() { document.querySelectorAll("img, image, video, svg").forEach((t => t.addEventListener("contextmenu", (t => t.preventDefault())))) } const p = t => { const n = { type: "CLICKED_LINK", link: t.currentTarget.getAttribute("href") }; navigator.sendBeacon("_api/analytics/events", JSON.stringify(n)) }; function g() { [...document.querySelectorAll("a[href][data-interstitial-link]")].forEach((t => { t.addEventListener("click", p) })) } const v = "--sbw", w = "--inner1Vh"; function y(t, n, e) { t.style.setProperty(n, e) } function E() { y(document.documentElement, w, window.innerHeight / 100 + "px"), function () { const t = window.innerWidth - document.documentElement.clientWidth; y(document.documentElement, v, t >= 0 ? `${t}px` : null) }() } var b; const O = "undefined" != typeof window ? null === (b = window.navigator) || void 0 === b ? void 0 : b.userAgent : void 0; const L = !(!O || (A = O, !A.match(/AppleWebKit\//) || A.match(/Chrome\//) || A.match(/Chromium\//))); var A; function x() { document.querySelectorAll("svg").forEach((t => t.style.background = "url('data:image/png;base64,')")) } let C; function W() { C || (C = Array.from(document.querySelectorAll("foreignObject")).filter((t => 0 === t.getBoundingClientRect().width))); const t = function () { const t = document.createElement("div"); t.style.fontSize = "100vw", document.body.append(t); const n = parseFloat(window.getComputedStyle(t).fontSize); return t.remove(), n / window.innerWidth }(); Array.from(C).forEach((n => function (t) { return new Promise(((n, e) => { const o = t.querySelector("img"); o && !o.complete ? (o.addEventListener("load", (() => n())), o.addEventListener("error", (() => e()))) : n() })) }(n).finally((() => function (t, n) { const e = Array.from(t.children); e.forEach(((t, n) => { if (t.hasAttribute("data-foreign-object-container")) t.style.transformOrigin = "", t.style.transform = ""; else { const o = document.createElement("div"); o.setAttribute("data-foreign-object-container", ""), t.insertAdjacentElement("beforebegin", o), t.remove(), o.append(t), e[n] = o } })); const o = t.getScreenCTM(); if (!o) return; const { a: i, b: r, c: c, d: a } = o.scale(n); e.forEach((t => { if (!t.hasAttribute("data-foreign-object-container")) return; const { style: n } = t; n.transformOrigin = "0px 0px", n.transform = `matrix(${i}, ${r}, ${c}, ${a}, 0, 0)` })) }(n, t))))) } [function () { e(f) }, function () { i(E, { runOnLoad: !0, runOnHeightChange: !0, priority: 1 }) }, function () { L && i(W, { runOnLoad: !0 }) }, function () { L && e(x) }, function () { e(h) }, function () { e(g) }].forEach((t => t())) }(); </script>
+<style>
+.floating-button {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  right: 40px;
+  color: #FFF;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.floating-button i {
+  font-size: 24px; /* Aumenta o tamanho do ícone */
+}
+
+.floating-button:hover {
+  opacity: 0.8;
+}
+
+.email-button {
+  background-color: #D44638;
+}
+
+.email-button:hover {
+  background-color: #B23127;
+}
+
+.instagram-button {
+  background-color: #C13584;
+}
+
+.instagram-button:hover {
+  background-color: #A42A6E;
+}
+
+.whatsapp-button {
+  background-color: #25D366;
+}
+
+.whatsapp-button:hover {
+  background-color: #1EB24A;
+}
+</style>
 
 </head>
 
 <body>
-
-  
-</a>
  
     <div id="root">
         <nav
@@ -5047,7 +5092,7 @@
             <input id="menuToggle" type="checkbox" style="display:none;"></input><label id="menuButton"
                 for="menuToggle">
                 <div id="menuButtonIcon" style="width:24px;padding:8px;"><svg viewBox="0 0 24.0 24.0"
-                        preserveAspectRatio="none" style="background:url(https://thefilm.com.br/&);">
+                        preserveAspectRatio="none" style="background:url(https://thefilm.com.br/);">
                         <path
                             d="M5.75 5.25h12.5a.75.75 0 1 1 0 1.5H5.75a.75.75 0 0 1 0-1.5zm0 6h12.5a.75.75 0 1 1 0 1.5H5.75a.75.75 0 1 1 0-1.5zm0 6h12.5a.75.75 0 1 1 0 1.5H5.75a.75.75 0 1 1 0-1.5z">
                         </path>
@@ -5055,39 +5100,39 @@
             </label>
             <ul id="verticalMenu">
                 <li class="navMenuLink"><a class="navMenuLinkContent" href="index.html#home" title="HOME"
-                        target="_self">HOME</a></li>
+                        target="_self"></li>
                 <li class="navMenuLink"><a class="navMenuLinkContent" href="index.html#sobre-n%C3%B3s"
-                        title=" SOBRE NÓS" target="_self"> SOBRE NÓS</a></li>
+                        title=" SOBRE NÓS" target="_self"> Sobre Nós</a></li>
                 <li class="navMenuLink"><a class="navMenuLinkContent" href="index.html#casamento" title="CASAMENTO"
-                        target="_self">CASAMENTO</a></li>
+                        target="_self">Casamento</a></li>
                 <li class="navMenuLink"><a class="navMenuLinkContent" href="index.html#filmagem-full-hd"
-                        title=" FILMAGEM FULL HD" target="_self"> FILMAGEM FULL HD</a></li>
+                        title=" FILMAGEM FULL HD" target="_self"> Filmagem Full HD</a></li>
                 <li class="navMenuLink"><a class="navMenuLinkContent" href="index.html#trailer" title="TRAILER"
-                        target="_self">TRAILER</a></li>
+                        target="_self">Trailer</a></li>
                 <li class="navMenuLink"><a class="navMenuLinkContent" href="index.html#pr%C3%A9-wedding"
-                        title=" PRÉ WEDDING" target="_self"> PRÉ WEDDING</a></li>
+                        title=" PRÉ WEDDING" target="_self"> Pre-wedding</a></li>
                 <li class="navMenuLink"><a class="navMenuLinkContent" href="index.html#same-day-edit"
-                        title=" SAME DAY EDIT" target="_self"> SAME DAY EDIT</a></li>
+                        title=" SAME DAY EDIT" target="_self"> Same Day Edit</a></li>
                 <li class="navMenuLink"><a class="navMenuLinkContent" href="index.html#servi%C3%A7os" title="SERVIÇOS"
-                        target="_self">SERVIÇOS</a></li>
+                        target="_self">Serviços</a></li>
             </ul>
             <ul id="horizontalMenu" style="margin:0;padding:0;visibility:hidden;">
                 <li class="navMenuLink"><a class="navMenuLinkContent" href="index.html#home" title="HOME"
-                        target="_self">HOME</a></li>
+                        target="_self"></a></li>
                 <li class="navMenuLink"><a class="navMenuLinkContent" href="index.html#sobre-n%C3%B3s"
-                        title=" SOBRE NÓS" target="_self"> SOBRE NÓS</a></li>
+                        title=" SOBRE NÓS" target="_self"> Sobre Nós</a></li>
                 <li class="navMenuLink"><a class="navMenuLinkContent" href="index.html#casamento" title="CASAMENTO"
-                        target="_self">CASAMENTO</a></li>
+                        target="_self">Casamento</a></li>
                 <li class="navMenuLink"><a class="navMenuLinkContent" href="index.html#filmagem-full-hd"
-                        title=" FILMAGEM FULL HD" target="_self"> FILMAGEM FULL HD</a></li>
+                        title=" FILMAGEM FULL HD" target="_self"> Filmagem Full HD</a></li>
                 <li class="navMenuLink"><a class="navMenuLinkContent" href="index.html#trailer" title="TRAILER"
-                        target="_self">TRAILER</a></li>
+                        target="_self">Trailer</a></li>
                 <li class="navMenuLink"><a class="navMenuLinkContent" href="index.html#pr%C3%A9-wedding"
-                        title=" PRÉ WEDDING" target="_self"> PRÉ WEDDING</a></li>
+                        title=" PRÉ WEDDING" target="_self"> Pre-wedding</a></li>
                 <li class="navMenuLink"><a class="navMenuLinkContent" href="index.html#same-day-edit"
-                        title=" SAME DAY EDIT" target="_self"> SAME DAY EDIT</a></li>
+                        title=" SAME DAY EDIT" target="_self"> Same Day Edit</a></li>
                 <li class="navMenuLink"><a class="navMenuLinkContent" href="index.html#servi%C3%A7os" title="SERVIÇOS"
-                        target="_self">SERVIÇOS</a></li>
+                        target="_self">Serviços</a></li>
             </ul>
         </nav><a id="home" aria-hidden="true" style="visibility:hidden;"></a>
         <section id="x0e9LKsRV6RYFvN7"
@@ -5118,121 +5163,24 @@
                             <div id="fSxZ7uzc4x27N4BT" style="width:100%;height:100%;opacity:1.0;">
                                 <div id="TBbIZQOdyFaJZh8h"
                                     style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
-                                    <div id="yoVbuccYo5dYsga2"
-                                        style="width:calc(100% * max(1, var(--scale-fill, 1)));height:calc(127.30442404% / min(1, var(--scale-fill, 1)));position:absolute;top:50%;left:50%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;">
-                                        <img src="images/db2858e7bc3bc1ad8f42111db25addc3.png" loading="lazy"
-                                            srcset="images/39964f3499bf057f68ce85fe71936232.png 484w, images/db2858e7bc3bc1ad8f42111db25addc3.png 967w"
-                                            sizes="(max-width: 375px) 91.46666667vw, (min-width: 375.05px) and (max-width: 480px) 93.33333333vw, (min-width: 480.05px) and (max-width: 768px) 91.66666667vw, (min-width: 768.05px) and (max-width: 1024px) 71.53808363vw, (min-width: 1024.05px) 53.62737748vw"
-                                            style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 39.27593277%;transform:translate(-50%, -39.27593277%) rotate(0deg);">
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="Mf37nKpLFC9WucfT" style="z-index:2;">
-                    <div id="HZnnFYb50NNEv8IO" style="padding-top:100%;transform:rotate(0deg);">
-                        <div id="AwZjmjyviclu7XMO" style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><a
-                                id="EPiWHpGErqcLjxIC" target="_blank" rel="noopener"
-                                href="https://www.instagram.com/the_filmbr/" style="pointer-events:all;"
-                                data-interstitial-link="">
-                                <div id="Gv1ZIFZM25pXq2TT" style="width:100%;height:100%;opacity:1.0;">
-                                    <div id="ACNf0K6wI0nUo6Q8"
-                                        style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
-                                        <div id="lO2dyyjCnDRDYrQa"
-                                            style="width:calc(100% * max(1, var(--scale-fill, 1)));height:calc(100% / min(1, var(--scale-fill, 1)));position:absolute;top:50%;left:50%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;">
-                                            <img src="images/ef9b8c30d97125cd5daf927f4f7dedf2.svg"
-                                                alt="Instagram Outline Logo" loading="lazy"
-                                                style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
-                                        </div>
-                                    </div>
-                                </div>
-                            </a></div>
-                    </div>
+
                 </div>
-                <div id="pf3w5dzWKaNEuWJ6" style="z-index:4;">
-                    <div id="PrSdjMKX5YjHhNfy" style="padding-top:99.75%;transform:rotate(0deg);">
-                        <div id="lsgggHVtFPdwZRWU" style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><a
-                                id="DOZAZWmvAKHfl6wt" target="_blank" rel="noopener"
-                                href="https://wa.me/qr/U2G6I5ALVVXPG1" style="pointer-events:all;"
-                                data-interstitial-link="">
-                                <div id="t9TVMF23CEGPrq2Y" style="width:100%;height:100%;opacity:1.0;">
-                                    <div id="JGCrOew4aPC46Kwm"
-                                        style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
-                                        <div id="Ko40Tb3xQKYbzrTA"
-                                            style="width:calc(100% * max(1, var(--scale-fill, 1)));height:calc(100% / min(1, var(--scale-fill, 1)));position:absolute;top:50%;left:50%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;">
-                                            <img src="images/83251d7f8002ee0764c066982003268c.svg"
-                                                alt="Chat Message Icon" loading="lazy"
-                                                style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
-                                        </div>
-                                    </div>
-                                </div>
-                            </a></div>
-                    </div>
-                </div>
-                <div id="XUqcjJitz00b2p7y" style="z-index:3;">
-                    <div id="BouV7zCt1otupGNP" style="padding-top:70%;transform:rotate(0deg);">
-                        <div id="ngfSfsYxiYKX9nUO" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
-                            <div id="vnirc1p3EFUEC1aC" style="width:100%;height:100%;opacity:1.0;">
-                                <div id="Hsb5aUImogiEDpHZ"
-                                    style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
-                                    <div id="msvdJZvr06N8FGoI"
-                                        style="width:calc(100% * max(1, var(--scale-fill, 1)));height:calc(100% / min(1, var(--scale-fill, 1)));position:absolute;top:50%;left:50%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;">
-                                        <img src="images/c1381f7903c4da1f7f13be5ee2f9ca0a.svg"
-                                            alt="Letter Envelope Icon" loading="lazy"
-                                            style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
                 <div id="h1D9RfnJzvK009Ur" style="z-index:7;">
-                    <div id="sNcF3KSxBVrfhALZ"
-                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
-                        <div id="xoDwM3PK5cTbiP28"
-                            style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
-                            <p id="WsZsKblqJzLgNO9O"
-                                style="color:#ffffff;direction:ltr;font-family:YAFdJjbTu24-1;line-height:1.19963915em;text-transform:none;letter-spacing:0em;">
-                                <span id="QS6GjY6JmH4ot6lm" style="color:#ffffff;font-weight:700;">@</span><a
-                                    id="Y1GWPkrlOGOBcEsf" target="_blank" rel="noopener"
-                                    href="https://www.instagram.com/the_filmbr/"
-                                    style="text-decoration-line:underline;color:#ffffff;font-weight:700;pointer-events:all;"
-                                    data-interstitial-link="">thefilm_br</a></p>
-                        </div>
-                    </div>
+
                 </div>
                 <div id="h4QPCWWIj07dT03r" style="z-index:6;">
-                    <div id="nErXOWT45Sed1h3t"
-                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
-                        <div id="aU429gKmFbjph4hp"
-                            style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
-                            <p id="uKKzgw8MDPeXKeEr"
-                                style="color:#ffffff;direction:ltr;font-family:YAFdJjbTu24-1;margin-left:0em;line-height:1.20371128em;text-transform:none;letter-spacing:0em;">
-                                <a id="nsbk5SOp0w5XhQ3t" target="_blank" rel="noopener" href="https://wa.me/7197227039"
-                                    style="text-decoration-line:underline;color:#ffffff;pointer-events:all;"
-                                    data-interstitial-link="">(</a><a id="SNlmAavGBSUy103e" target="_blank"
-                                    rel="noopener" href="https://wa.me/7197227039"
-                                    style="text-decoration-line:underline;color:#ffffff;font-weight:700;pointer-events:all;"
-                                    data-interstitial-link="">71) 9722-7039</a></p>
-                        </div>
-                    </div>
+
                 </div>
-                <div id="MNO9vqKYM1oh88sw" style="z-index:5;">
-                    <div id="x4LFJdXhDAvVUW6j"
-                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
-                        <div id="Cg6LrPmjmRFRS7e0"
-                            style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
-                            <p id="QTt6WB6bN24Dj6qC"
-                                style="color:#ffffff;direction:ltr;font-family:YAFdJs2qTWQ-0;margin-left:0em;line-height:1.2179298em;text-transform:none;letter-spacing:0em;">
-                                <a id="yDlFoGUiZiffOMPG" target="_blank" rel="noopener"
-                                    href="mailto:thefilmbr@gmail.com"
-                                    style="color:#ffffff;font-weight:700;pointer-events:all;">thefilmbr@gmail.com</a><br>
-                            </p>
-                        </div>
-                    </div>
+
                 </div>
-            </div>
         </section><a id="sobre-n%C3%B3s" aria-hidden="true" style="visibility:hidden;"></a>
         <section id="G9KBTCYWdl5Nkw0q"
             style="position:relative;overflow:hidden;display:grid;align-items:center;grid-template-columns:auto 100rem auto;z-index:0;margin-top:-1px;">
@@ -6101,10 +6049,24 @@
         <script src="js/781b7c2778641097cc201ef02652a4376abe12baf4b506965843770004e198e1.js" async=""
             nonce="98e2ae0f-f4dd-4b7d-9010-6a3717968ed0"></script>
     </div>
-    <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
-<a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=5571981788823&text=Ol%C3%A1.%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20The%20Film!">
-  <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
 
-  </body>
+<a href="mailto:thefilmbr@gmail.com?subject=Assunto%20da%20Mensagem&body=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços." class="floating-button email-button" style="bottom: 60px;">
+<i class="fa fa-envelope"></i>
+</a>
+
+<a target="_blank" href="https://www.instagram.com/the_filmbr/" class="floating-button instagram-button" style="bottom: 130px;">
+    <i class="fa fa-instagram"></i>
+</a>
+
+<a target="_blank" href="https://api.whatsapp.com/send?phone=5571981788823&text=Ol%C3%A1.%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20The%20Film!" class="floating-button whatsapp-button" style="bottom: 200px;">
+    <i class="fa fa-whatsapp"></i>
+</a>
+
+
+</body>
+
+<footer class="footer">
+  <p>&copy; 2023 The Film BR. All rights reserved.</p>
+</footer>
 
 </html>
